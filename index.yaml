@@ -3,6 +3,16 @@ entries:
   test:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-05-15T04:17:57.213132414Z"
+    description: A Helm chart for Kubernetes
+    digest: ffd7c66c532eba77c3ee73d28bfeef4f41670b71ffc5de4299b3542a874984e5
+    name: test
+    type: application
+    urls:
+    - https://github.com/nan-depot/helm-chart/releases/download/test-0.1.1/test-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-05-15T04:07:52.950695032Z"
     description: A Helm chart for Kubernetes
     digest: 55dc761a12871d7ea38a1632ce9144e29979bc9af08b1b4382afe2977de88b5a
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/nan-depot/harness-helm-chart/releases/download/test-0.1.0/test-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-15T04:07:52.950705481Z"
+generated: "2024-05-15T04:17:57.213149616Z"
