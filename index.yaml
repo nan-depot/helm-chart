@@ -31,6 +31,46 @@ entries:
     urls:
     - https://github.com/nan-depot/helm-chart/releases/download/alwaysfail-0.1.0/alwaysfail-0.1.0.tgz
     version: 0.1.0
+  apps:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-05-15T17:50:39.798702504Z"
+    description: A Helm chart for Kubernetes
+    digest: 157bd77319a95caa7ee7043ded7742e3a19a67f68f159c16b57aab7aec676631
+    name: apps
+    type: application
+    urls:
+    - https://github.com/nan-depot/helm-chart/releases/download/apps-0.1.0/apps-0.1.0.tgz
+    version: 0.1.0
+  monitoring:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-05-15T17:50:39.939853639Z"
+    dependencies:
+    - name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 25.20.1
+    - name: prometheus-mysql-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 2.5.3
+    description: A Helm chart for Kubernetes
+    digest: 5726fe042be210bd07d9a0574977ab095744e23a474f8d57ef3892231bb60ea0
+    name: monitoring
+    type: application
+    urls:
+    - https://github.com/nan-depot/helm-chart/releases/download/monitoring-0.1.0/monitoring-0.1.0.tgz
+    version: 0.1.0
+  monitoring-apps:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-05-15T17:50:40.059150985Z"
+    description: A Helm chart for Kubernetes
+    digest: eb91500daa698b88242372ed0787b069711e809b85c272c1194c0ecdb487fbc0
+    name: monitoring-apps
+    type: application
+    urls:
+    - https://github.com/nan-depot/helm-chart/releases/download/monitoring-apps-0.1.0/monitoring-apps-0.1.0.tgz
+    version: 0.1.0
   test:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -80,4 +120,4 @@ entries:
     urls:
     - https://github.com/nan-depot/harness-helm-chart/releases/download/test-0.1.0/test-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-15T17:10:46.121408858Z"
+generated: "2024-05-15T17:50:40.059177244Z"
