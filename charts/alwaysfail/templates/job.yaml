@@ -1,0 +1,34 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ .Release.Name }}-schema-initialization
+spec:
+  parallelism: 1
+  completions: 1
+  backoffLimit: 0
+  template:
+    metadata:
+      name: {{ .Release.Name }}-schema-initialization
+    spec:
+      initContainers:
+      - name: wait-for-service
+        image: bitnami/kubectl
+        command:
+        - "/bin/bash"
+        - "-ec"
+        - |
+            echo "Wait for rollout mysql stateful set"
+            kubectl rollout status statefulset/{{ .Release.Name }}-mysql
+      containers:
+        - name: schema-initialization
+          image: angelfoxxu/speeddb
+          env:
+            - name: liquibase_command_username
+              value: root
+            - name: liquibase_command_password
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Release.Name }}-mysql
+                  key: mysql-root-password
+      restartPolicy: Never
+
