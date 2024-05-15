@@ -3,6 +3,16 @@ entries:
   alwaysfail:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-05-15T17:10:46.121387779Z"
+    description: A Helm chart for Kubernetes
+    digest: edd14b474b2a652bd961ab60c43b0d1f5ed02fd5b734c1d472dafb6d9dada63e
+    name: alwaysfail
+    type: application
+    urls:
+    - https://github.com/nan-depot/helm-chart/releases/download/alwaysfail-0.1.11/alwaysfail-0.1.11.tgz
+    version: 0.1.11
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-05-15T06:00:06.5135471Z"
     description: A Helm chart for Kubernetes
     digest: 36c9726259315fec9b2e3a4938397b236a61ae6d1a709789c90096acc83b548d
@@ -70,4 +80,4 @@ entries:
     urls:
     - https://github.com/nan-depot/harness-helm-chart/releases/download/test-0.1.0/test-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-15T06:00:06.513564022Z"
+generated: "2024-05-15T17:10:46.121408858Z"
