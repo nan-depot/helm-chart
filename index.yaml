@@ -14,6 +14,20 @@ entries:
   test:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-05-15T05:58:16.290325783Z"
+    dependencies:
+    - name: alwaysfail
+      repository: https://nan-depot.github.io/helm-chart
+      version: 0.1.0
+    description: A Helm chart for Kubernetes
+    digest: 69bb77cd871d278f4411473dd41a2e3a2181b74d5c618f5b5a3217d8a1a641f8
+    name: test
+    type: application
+    urls:
+    - https://github.com/nan-depot/helm-chart/releases/download/test-0.1.3/test-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-05-15T05:44:42.991989441Z"
     dependencies:
     - name: alwaysfail
@@ -46,4 +60,4 @@ entries:
     urls:
     - https://github.com/nan-depot/harness-helm-chart/releases/download/test-0.1.0/test-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-15T05:44:42.992007094Z"
+generated: "2024-05-15T05:58:16.290367401Z"
