@@ -25,5 +25,5 @@ appVersion: "1.16.0"
 
 dependencies:
 - name: alwaysfail
-  version: "0.1.0"
+  version: "0.1.11"
   repository: "https://nan-depot.github.io/helm-chart"

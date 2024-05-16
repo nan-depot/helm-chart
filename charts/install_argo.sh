@@ -21,7 +21,7 @@ printf "\n =====config repo in argocd======\n"
 curl 'https://localhost:8080/api/v1/repositories' \
   -H 'Content-Type: application/json' \
   -H "Authorization: Bearer $token" \
-  --data-raw '{"type":"git","repo":"https://github.com/nan-depot/helm-chart","username":"nanxu1980@gmail.com","password":"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","project":"default"}' \
+  --data-raw '{"type":"git","repo":"https://github.com/nan-depot/helm-chart","username":"nan-depot","password":"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","project":"default"}' \
   --insecure
 
 #add root app to argo
