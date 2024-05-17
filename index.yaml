@@ -81,6 +81,21 @@ entries:
     urls:
     - https://github.com/nan-depot/helm-chart/releases/download/monitoring-apps-0.1.0/monitoring-apps-0.1.0.tgz
     version: 0.1.0
+  speedDb:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-05-17T03:39:44.036268443Z"
+    dependencies:
+    - name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.22.0
+    description: A Helm chart for Kubernetes
+    digest: f8e23a1727d648d4a166bcc7cc438f7a554ae2bb5b1306155cdc426f0b771dd6
+    name: speedDb
+    type: application
+    urls:
+    - https://github.com/nan-depot/helm-chart/releases/download/speedDb-0.1.0/speedDb-0.1.0.tgz
+    version: 0.1.0
   test:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -130,4 +145,4 @@ entries:
     urls:
     - https://github.com/nan-depot/harness-helm-chart/releases/download/test-0.1.0/test-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-17T03:34:42.46236518Z"
+generated: "2024-05-17T03:39:44.036296705Z"
