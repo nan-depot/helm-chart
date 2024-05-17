@@ -35,6 +35,9 @@ spec:
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          env:
+            - name: spring_datasource_url
+              value: jdbc:mariadb://{{ .Release.Name }}-mysql:3306/speed
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
