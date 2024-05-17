@@ -141,6 +141,20 @@ entries:
   speedDb:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-05-17T05:33:03.63802134Z"
+    dependencies:
+    - name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.22.0
+    description: A Helm chart for Kubernetes
+    digest: 5c66d0e6577da1cb87479249b83a01aefc15f8b35e01bfdc54af69305e6bab26
+    name: speedDb
+    type: application
+    urls:
+    - https://github.com/nan-depot/helm-chart/releases/download/speedDb-0.1.4/speedDb-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-05-17T05:05:49.841189509Z"
     dependencies:
     - name: mysql
@@ -244,4 +258,4 @@ entries:
     urls:
     - https://github.com/nan-depot/harness-helm-chart/releases/download/test-0.1.0/test-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-17T05:07:49.398848756Z"
+generated: "2024-05-17T05:33:03.638070202Z"
