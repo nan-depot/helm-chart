@@ -84,6 +84,20 @@ entries:
   speed-api:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-05-17T05:48:57.481298715Z"
+    dependencies:
+    - name: speedDb
+      repository: https://nan-depot.github.io/helm-chart
+      version: '>=0.1.5'
+    description: A Helm chart for Kubernetes
+    digest: a987cf397d4530f31aabea4fb810396740cfaeb5f471b61eaa7ba69697ac08e5
+    name: speed-api
+    type: application
+    urls:
+    - https://github.com/nan-depot/helm-chart/releases/download/speed-api-0.1.5/speed-api-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-05-17T05:34:44.702413352Z"
     dependencies:
     - name: speedDb
@@ -286,4 +300,4 @@ entries:
     urls:
     - https://github.com/nan-depot/harness-helm-chart/releases/download/test-0.1.0/test-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-17T05:46:26.647995659Z"
+generated: "2024-05-17T05:48:57.481377332Z"
