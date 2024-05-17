@@ -4,8 +4,8 @@ metadata:
   name: default-reader
 subjects:
 - kind: ServiceAccount
-  name: default
-  namespace: default
+  name: speedServiceAccount
+  namespace: speed
 roleRef:
   kind: ClusterRole
   name: reader-role
