@@ -29,5 +29,6 @@ spec:
               valueFrom: 
                 secretKeyRef:
                   name: {{ .Release.Name }}-mysql
-                  key: mysql-root-password  
+                  key: mysql-root-password 
+      serviceAccountName: speed-service-account 
       restartPolicy: Never
