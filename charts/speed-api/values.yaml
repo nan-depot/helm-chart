@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: angelfoxxu/speedtest
+  repository: angelfoxxu/speed
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "0.0.4"
