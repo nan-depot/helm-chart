@@ -63,6 +63,16 @@ entries:
   monitoring-apps:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-05-17T03:34:42.462336366Z"
+    description: A Helm chart for Kubernetes
+    digest: 1f928fdeb41f179a130aab21af1cee76d17a05fde35eabfae8d16322aeb3a009
+    name: monitoring-apps
+    type: application
+    urls:
+    - https://github.com/nan-depot/helm-chart/releases/download/monitoring-apps-0.1.1/monitoring-apps-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-05-15T17:50:40.059150985Z"
     description: A Helm chart for Kubernetes
     digest: eb91500daa698b88242372ed0787b069711e809b85c272c1194c0ecdb487fbc0
@@ -120,4 +130,4 @@ entries:
     urls:
     - https://github.com/nan-depot/harness-helm-chart/releases/download/test-0.1.0/test-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-15T17:50:40.059177244Z"
+generated: "2024-05-17T03:34:42.46236518Z"
