@@ -6,6 +6,6 @@ replicaCount: 1
 
 prometheus-mysql-exporter:
   mysql:
-    host: "speed-db-mysql-0.speed-db-mysql.default.svc.cluster.local"
+    host: "speed-api-mysql-0.speed.pod.cluster.local"
     user: "root"
     pass: "password"
