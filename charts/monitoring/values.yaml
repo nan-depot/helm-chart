@@ -9,3 +9,22 @@ prometheus-mysql-exporter:
     host: "speed-api-mysql-0.speed-api-mysql.speed"
     user: "root"
     pass: "password"
+
+
+
+grafana:
+  datasources:
+    datasources.yaml:
+      apiVersion: 1
+      datasources:
+        - name: prometheus
+          type: prometheus
+          url: http://prometheus-server
+          access: proxy
+          isDefault: true
+          editable: false
+  dashboards:
+    default:
+      custom-dashboard:
+        # This is a path to a file inside the dashboards directory inside the chart directory
+        file: dashboards/mysql-dashboard.json
