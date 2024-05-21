@@ -30,7 +30,7 @@ grafana:
          path: /var/lib/grafana/dashboards/default
   dashboards:
     default:
-      mysql:
+      mysql
         # This is a path to a file inside the dashboards directory inside the chart directory
-        file: dashboards/mysql-dashboard.json
+        # file: dashboards/mysql-dashboard.json
 
