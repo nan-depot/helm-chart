@@ -13,6 +13,7 @@ prometheus-mysql-exporter:
 
 
 grafana:
+  adminPassword: password
   datasources:
     datasources.yaml:
       apiVersion: 1
@@ -28,3 +29,4 @@ grafana:
       custom-dashboard:
         # This is a path to a file inside the dashboards directory inside the chart directory
         file: dashboards/mysql-dashboard.json
+
