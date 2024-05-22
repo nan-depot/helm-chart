@@ -28,8 +28,6 @@ grafana:
        editable: true
        options:
          path: /var/lib/grafana/dashboards/default
-  dashboards:
-    default:
-      mysql:
-        json: |
-          {{- include "dashboards/mysql-dashboard.json" . | nindent 12 }}
+  dashboardsConfigMaps:
+    default: "mysql-dashboard"
+           

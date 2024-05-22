@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-dashboard
+  labels:
+    grafana_dashboard: "1"
+data:
+  mysql.json: |
+{{ .Files.Get "dashboards/mysql-dashboard.json" | indent 4 }}
