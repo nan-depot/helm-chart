@@ -29,5 +29,5 @@ grafana:
        options:
          path: /var/lib/grafana/dashboards/default
   dashboardsConfigMaps:
-    default: "mysql-dashboard"
+    default: "default-dashboards"
            
