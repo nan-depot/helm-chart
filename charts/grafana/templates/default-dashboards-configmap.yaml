@@ -5,7 +5,5 @@ metadata:
   labels:
     grafana_dashboard: "1"
 data:
-  mysql.json: |
-{{ .Files.Get "dashboards/mysql-dashboard.json" | indent 4 }}
   node.json: |
 {{ .Files.Get "dashboards/node-dashboard.json" | indent 4 }}
