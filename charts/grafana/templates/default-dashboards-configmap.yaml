@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: default-dashboards
-  labels:
-    grafana_dashboard: "1"
-data:
-  node.json: |
-{{ .Files.Get "dashboards/node-dashboard.json" | indent 4 }}
