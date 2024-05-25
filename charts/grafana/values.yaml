@@ -5,16 +5,5 @@
 grafana:
   image:
     repository: angelfoxxu/speed-grafana
-    tag: 0.0.3
+    tag: 0.0.4
   adminPassword: password
-  datasources:
-    datasources.yaml:
-      apiVersion: 1
-      datasources:
-        - name: prometheus
-          type: prometheus
-          url: http://prometheus-server
-          access: proxy
-          isDefault: true
-          editable: false
-           
