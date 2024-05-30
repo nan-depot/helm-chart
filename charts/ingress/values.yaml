@@ -6,4 +6,5 @@
 ingress-nginx:
   controller:
     service:
-      externalIPs: 10.99.55.111
+      externalIPs: 
+        - 10.99.55.111
