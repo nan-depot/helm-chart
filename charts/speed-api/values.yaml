@@ -79,10 +79,12 @@ livenessProbe:
   httpGet:
     path: /live
     port: 8080 
+  timeoutSeconds: 1000
 readinessProbe:
   httpGet:
     path: /ready
     port: 8080
+  timeoutSeconds: 1000
 
 autoscaling:
   enabled: false
