@@ -4,6 +4,12 @@
 
 replicaCount: 1
 
+
+prometheus:
+  server:
+    global:
+      scrape_interval: 15s
+
 prometheus-mysql-exporter:
   mysql:
     host: "speed-api-mysql-0.speed-api-mysql.speed"
