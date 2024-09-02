@@ -5,5 +5,5 @@
 grafana:
   image:
     repository: angelfoxxu/speed-grafana
-    tag: 0.0.9
+    tag: 0.0.10
   adminPassword: password
