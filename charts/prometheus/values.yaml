@@ -11,13 +11,13 @@ prometheus:
       scrape_interval: 15s
 
   extraScrapeConfigs: |
-    - job_name: mysql
+    - job_name: mysql0
       static_configs:
         - targets:
           - prometheus-prometheus-mysql-exporter:9104
       relabel_configs:
-        - source_labels: [__address__]
-          target_label: instance
+        - target_label: instance
+          replacement: 'mysql0'
 
 
 prometheus-mysql-exporter:
