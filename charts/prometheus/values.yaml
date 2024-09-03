@@ -10,7 +10,20 @@ prometheus:
     global:
       scrape_interval: 15s
 
+  extraScrapeConfigs: |
+    - job_name: mysql
+      static_configs:
+        - targets:
+          - prometheus-prometheus-mysql-exporter:9104
+      relabel_configs:
+        - source_labels: [__address__]
+          target_label: instance
+
+
 prometheus-mysql-exporter:
+  annotations:
+    mysql.exporter: "true"
+
   mysql:
     host: "speed-api-mysql-0.speed-api-mysql.speed"
     user: "root"
