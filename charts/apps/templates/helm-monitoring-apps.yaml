@@ -17,5 +17,6 @@ spec:
     helm:
       valueFiles:
         - values-{{ .Values.env }}.yaml
-      values:
-        - env: {{ .Values.env }}
+      parameters:
+        - name: env
+          value: {{ .Values.env }}
