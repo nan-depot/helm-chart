@@ -17,7 +17,5 @@ spec:
     helm:
       ignoreMissingValueFiles: true
       valueFiles:
+      - values.yaml
       - values-{{ .Values.env }}.yaml
-      values:
-      - env: {{ .Values.env }}
-
