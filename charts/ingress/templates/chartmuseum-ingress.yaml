@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: chartmuseum-ingress
+  namespace: infra
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: chartmuseum
+      http:
+        paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: artifactory-chartmuseum
+              port:
+                number: 8080
