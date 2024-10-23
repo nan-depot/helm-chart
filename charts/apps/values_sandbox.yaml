@@ -1,7 +1,0 @@
-env: sandbox
-spec:
-  destination:
-    server: https://kubernetes.default.svc
-  source:
-    repoURL: https://github.com/nan-depot/helm-chart
-    targetRevision: HEAD

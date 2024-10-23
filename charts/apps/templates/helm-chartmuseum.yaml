@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: chartmuseu
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: infra
+    server: {{ .Values.spec.destination.server }}
+  project: default
+  sources:
+  - repoURL: {{ .Values.spec.chartmuseum.repo }}
+    chart: {{ .Values.spec.chartmuseum.chart }}
+    targetRevision: {{ .Values.spec.chartmuseum.version }}
+    helm:
+      ignoreMissingValueFiles: true
+      valueFiles:
+      - $values/charts/chartmuseum/values.yaml
+      - $values/charts/chartmuseum/values-{{ .Values.env }}.yaml
+
+  - repoURL: {{ .Values.spec.source.repoURL }}
+    targetRevision: {{ .Values.spec.source.targetRevision }}
+    ref: values
+
+
