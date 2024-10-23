@@ -14,3 +14,6 @@ spec:
     path: charts/speed-api
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
+    helm:
+      valueFiles:
+      - values-{{ .Values.env }}.yaml
