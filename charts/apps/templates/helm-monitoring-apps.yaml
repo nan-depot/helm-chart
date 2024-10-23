@@ -16,6 +16,7 @@ spec:
     targetRevision: {{ .Values.spec.source.targetRevision }}
     helm:
       valueFiles:
+        - values.yaml
         - values-{{ .Values.env }}.yaml
       parameters:
         - name: env
