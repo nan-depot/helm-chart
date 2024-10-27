@@ -38,6 +38,8 @@ spec:
           env:
             - name: spring_datasource_url
               value: jdbc:mysql://{{ .Release.Name }}-mysql:3306/speed
+            - name: JAVA_TOOL_OPTIONS
+              value: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
