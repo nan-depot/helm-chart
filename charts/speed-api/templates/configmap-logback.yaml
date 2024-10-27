@@ -1,0 +1,9 @@
+{{- if .Values.logback }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: logback-config
+data:
+  logback-spring.xml: |
+{{ .Values.logback | nindent 4 }}
+{{- end}}

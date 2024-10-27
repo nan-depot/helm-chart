@@ -10,6 +10,27 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: "0.0.10"
 
+logback: |
+    <configuration scan="true" scanPeriod="30 seconds">
+       <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"/>
+
+       <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+           <encoder>
+               <pattern>${LOG_PATTERN}</pattern>
+           </encoder>
+       </appender>
+
+       <logger name="com.angelfox.speedtest.health" level="info" additivity="false">
+           <appender-ref ref="CONSOLE"/>
+       </logger>
+
+       <!-- Root logger configuration -->
+       <root level="INFO">
+           <appender-ref ref="CONSOLE"/>
+       </root>
+    </configuration>
+
+
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -94,14 +115,21 @@ autoscaling:
   # targetMemoryUtilizationPercentage: 80
 
 # Additional volumes on the output Deployment definition.
-volumes: []
+volumes: 
+  - name: logback-config
+    configMap:
+      name: logback-config
+
 # - name: foo
 #   secret:
 #     secretName: mysecret
 #     optional: false
 
 # Additional volumeMounts on the output Deployment definition.
-volumeMounts: []
+volumeMounts:
+  - name: logback-config
+    mountPath: /workspace/BOOT-INF/classes/logback-spring.xml
+    subPath: logback-spring.xml
 # - name: foo
 #   mountPath: "/etc/foo"
 #   readOnly: true
