@@ -37,7 +37,7 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           env:
             - name: spring_datasource_url
-              value: jdbc:mysql://{{ .Release.Name }}-mysql:3306/speed
+              value: jdbc:mysql://speed-db-mysql:3306/speed
             - name: JAVA_TOOL_OPTIONS
               value: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
