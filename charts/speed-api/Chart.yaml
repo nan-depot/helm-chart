@@ -22,9 +22,3 @@ version: 0.2.0
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
 appVersion: "1.16.0"
-
-dependencies:
-- name: speedDb
-  version: ">=0.1.5"
-  repository: "https://nan-depot.github.io/helm-chart"
-
